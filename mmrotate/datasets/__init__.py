@@ -19,6 +19,7 @@ from .kfgod import *  # noqa: F401, F403
 from .levir_cd import * # noqa: F401, F403
 from .dronevehicle import * # noqa: F401, F403
 from .nwpu import * # noqa: F401, F403
+from .codrone import CODroneDataset  # noqa: F401, F403
 
 __all__ = [
     'DOTADataset', 'DOTAv15Dataset', 'DOTAv2Dataset', 'HRSCDataset',
@@ -26,5 +27,5 @@ __all__ = [
     'RSARDataset', 'FAIRDataset', 'ConcatDataset', 'yolov5_collate',
     'BatchShapePolicy', 'YOLOv5DOTADataset', 'YOLOv5DOTA15Dataset',
     'ReCon1MDataset', 'STARDataset', 'KFGODDataset', 'LEVIR_CD_Dataset',
-    'DroneVehicleDataset', 'NWPUDataset'
+    'DroneVehicleDataset', 'NWPUDataset', 'CODroneDataset'
 ]
