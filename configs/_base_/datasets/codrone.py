@@ -3,10 +3,11 @@
 
 dataset_type = 'CODroneDataset'
 data_root = 'data/CODrone/'
-patch_data_root = 'data/split_ss_codrone_crossview/'
+patch_data_root = 'data/CODrone/crossview_patches/'
 backend_args = None
+dataset_num_classes = 12
 
-view = 'AG-60'  # 可选视角：'STD'、'AG-30'、'AG-60'、'AG-100'、'AngG-30'、'AngG-90'、'JG-Extreme'
+view = 'STD'  # 可选视角：'STD'、'AG-30'、'AG-60'、'AG-100'、'AngG-30'、'AngG-90'、'JG-Extreme'
 
 # 训练数据处理流水线 - 添加视角信息提取
 train_pipeline = [

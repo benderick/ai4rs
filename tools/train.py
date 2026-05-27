@@ -3,6 +3,7 @@ import argparse
 import logging
 import os
 import os.path as osp
+import sys
 
 from mmdet.utils import register_all_modules as register_all_modules_mmdet
 from mmengine.config import Config, DictAction
@@ -11,6 +12,15 @@ from mmengine.registry import RUNNERS
 from mmengine.runner import Runner
 
 from mmrotate.utils import register_all_modules
+
+
+# 将仓库根目录加入 sys.path。
+# 原因是以 `python tools/train.py ...` 方式启动时，Python 默认只会把
+# `tools` 目录放入模块搜索路径，mmengine 在解析 lazy config 中的
+# `from configs...` 时就无法发现仓库根目录下的本地 `configs` 包。
+REPO_ROOT = osp.dirname(osp.dirname(osp.abspath(__file__)))
+if REPO_ROOT not in sys.path:
+    sys.path.insert(0, REPO_ROOT)
 
 
 def parse_args():
