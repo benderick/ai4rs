@@ -66,10 +66,11 @@ NOTE: The results and checkpoints come from [official github](https://github.com
 ## Citation
 
 ```
-@article{lu2025legnet,
-  title={LEGNet: Lightweight Edge-Gaussian Driven Network for Low-Quality Remote Sensing Image Object Detection},
+@inproceedings{lu2025legnet,
+  title={LEGNet: A Lightweight Edge-Gaussian Network for Low-Quality Remote Sensing Image Object Detection},
   author={Lu, Wei and Chen, Si-Bao and Li, Hui-Dong and Shu, Qing-Ling and Ding, Chris HQ and Tang, Jin and Luo, Bin},
-  journal={arXiv preprint arXiv:2503.14012},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+  pages={2844--2853},
   year={2025}
 }
 ```

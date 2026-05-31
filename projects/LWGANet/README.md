@@ -75,10 +75,11 @@ NOTE: The results and checkpoints come from [official github](https://github.com
 ## Citation
 
 ```
-@article{lu2025lwganet,
-  title={Lwganet: A lightweight group attention backbone for remote sensing visual tasks},
-  author={Lu, Wei and Chen, Si-Bao and Ding, Chris HQ and Tang, Jin and Luo, Bin},
-  journal={arXiv preprint arXiv:2501.10040},
-  year={2025}
+@inproceedings{lu2026lwganet,
+  title={LWGANet: Addressing Spatial and Channel Redundancy in Remote Sensing Visual Tasks with Light-Weight Grouped Attention},
+  author={Lu, Wei and Yang, Xue and Chen, Si-Bao},
+  booktitle={AAAI Conference on Artificial Intelligence},
+  pages={},
+  year={2026}
 }
 ```

@@ -9,10 +9,10 @@ from projects.rotated_rtdetr.rotated_rtdetr import (RotatedRTDETR, RTDETRFPN, Re
                                                     RotatedRTDETRHead, RTDETRVarifocalLoss)
 
 with read_base():
-    from configs._base_.datasets.codrone import *
+    from configs._base_.datasets.dronevehicle_rgb import *
     from ..runtime import *
     from ..schedule import *
-    from ..project_1 import *
+    from ..project_2 import *
 
 #################################
 wb_model_name = 'o2_rtdetr'

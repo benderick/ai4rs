@@ -125,3 +125,8 @@ tmp
 
 # custom
 mmrotate/.mim
+
+*arXiv*
+prompt.md
+references
+.agents

@@ -3,6 +3,10 @@ dataset_type = 'DroneVehicleDataset'
 data_root = 'data/DroneVehicle/'
 backend_args = None
 
+dataset_num_classes = 5
+
+view = 'RGB'  # RGB, IR, or RGBIR
+
 train_pipeline = [
     dict(type='mmdet.LoadImageFromFile', backend_args=backend_args),
     dict(type='mmdet.LoadAnnotations', with_bbox=True, box_type='qbox'),
@@ -25,8 +29,8 @@ val_pipeline = [
         type='mmdet.PackDetInputs')
 ]
 train_dataloader = dict(
-    batch_size=2,
-    num_workers=2,
+    batch_size=8,
+    num_workers=8,
     persistent_workers=True,
     sampler=dict(type='DefaultSampler', shuffle=True),
     batch_sampler=None,
@@ -40,8 +44,8 @@ train_dataloader = dict(
         pipeline=train_pipeline))
 
 val_dataloader = dict(
-    batch_size=2,
-    num_workers=2,
+    batch_size=8,
+    num_workers=8,
     persistent_workers=True,
     drop_last=False,
     sampler=dict(type='DefaultSampler', shuffle=False),

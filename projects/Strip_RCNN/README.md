@@ -87,10 +87,5 @@ bash tools/dist_test.sh projects/Strip_RCNN/configs/strip_rcnn_s_fpn_1x_dota_le9
 ## Citation
 
 ```
-@article{yuan2025strip,
-  title={Strip R-CNN: Large Strip Convolution for Remote Sensing Object Detection},
-  author={Yuan, Xinbin and Zheng, ZhaoHui and Li, Yuxuan and Liu, Xialei and Liu, Li and Li, Xiang and Hou, Qibin and Cheng, Ming-Ming},
-  journal={arXiv preprint arXiv:2501.03775},
-  year={2025}
-}
+@article{Yuan_Zheng_Li_Liu_Liu_Li_Hou_Cheng_2026, title={Strip R-CNN: Large Strip Convolution for Remote Sensing Object Detection}, volume={40}, url={https://ojs.aaai.org/index.php/AAAI/article/view/38217}, DOI={10.1609/aaai.v40i15.38217}, number={15}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Yuan, Xinbin and Zheng, Zhaohui and Li, Yuxuan and Liu, Xialei and Liu, Li and Li, Xiang and Hou, Qibin and Cheng, Ming-Ming}, year={2026}, month={Mar.}, pages={12259–12267} }
 ```
